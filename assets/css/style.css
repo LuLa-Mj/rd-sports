@@ -149,7 +149,7 @@ a {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(6, 18, 26, 0.94) 0%, rgba(9, 32, 43, 0.74) 44%, rgba(12, 58, 64, 0.28) 100%),
-    url("https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=2200&q=85") center / cover;
+    url("../../img/图片10.png") center / cover;
   transform: scale(1.02);
 }
 
@@ -582,7 +582,7 @@ h2 {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(8, 24, 32, 0.9), rgba(8, 24, 32, 0.45)),
-    url("https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=2200&q=85") center / cover;
+    url("../../img/dibu.jpg") center / cover;
 }
 
 .vision-inner {
