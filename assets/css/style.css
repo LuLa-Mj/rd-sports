@@ -811,6 +811,90 @@ h2 {
   padding-left: 20px;
 }
 
+.honor-scroll {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 20px) / 2);
+  gap: 20px;
+  padding-bottom: 8px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scrollbar-width: none;
+}
+
+.honor-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.honor-item {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.62fr) minmax(220px, 1fr);
+  gap: 18px;
+  min-height: 300px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(12, 31, 42, 0.08);
+  scroll-snap-align: start;
+}
+
+.honor-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.honor-copy span {
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.honor-copy strong {
+  color: var(--ink);
+  font-size: 28px;
+  line-height: 1.22;
+}
+
+.honor-image {
+  min-height: 250px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+  overflow: hidden;
+}
+
+.honor-image img {
+  object-fit: contain;
+  padding: 18px;
+  background: #fff;
+}
+
+.honor-placeholder {
+  height: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.honor-placeholder strong {
+  margin-bottom: 10px;
+  color: var(--blue);
+  font-size: 22px;
+}
+
+.honor-placeholder span {
+  line-height: 1.7;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 28px;
@@ -1107,6 +1191,19 @@ h2 {
     scroll-snap-align: start;
   }
 
+  .gallery-grid.snap-row {
+    grid-auto-columns: minmax(252px, 78vw);
+  }
+
+  .gallery-grid.snap-row .gallery-item {
+    min-height: 210px;
+  }
+
+  .achievement-grid.snap-row,
+  .feature-grid.snap-row {
+    grid-auto-columns: minmax(254px, 80vw);
+  }
+
   .company,
   .service,
   .partner {
@@ -1149,6 +1246,29 @@ h2 {
 
   .partner {
     padding: 22px;
+  }
+
+  .honor-scroll {
+    grid-auto-columns: 84vw;
+    margin-left: -18px;
+    margin-right: -18px;
+    padding: 0 28px 10px;
+    scroll-padding-inline: 28px;
+  }
+
+  .honor-item {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 22px;
+  }
+
+  .honor-copy strong {
+    font-size: 23px;
+  }
+
+  .honor-image,
+  .honor-placeholder {
+    min-height: 220px;
   }
 
   .service {
