@@ -731,6 +731,27 @@ h2 {
   gap: 30px;
 }
 
+.company-photo-panel {
+  position: relative;
+  min-height: 380px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #dfe7e4;
+  box-shadow: 0 14px 34px rgba(12, 31, 42, 0.08);
+}
+
+.company-photo-panel span {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  padding: 10px 12px;
+  background: rgba(8, 24, 32, 0.78);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .profile-card,
 .detail-card,
 .feature,
@@ -1132,6 +1153,10 @@ h2 {
 
   .image-panel {
     min-height: 220px;
+  }
+
+  .company-photo-panel {
+    min-height: 240px;
   }
 
   .text-panel h3,
